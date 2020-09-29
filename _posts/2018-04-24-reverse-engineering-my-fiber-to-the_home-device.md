@@ -17,12 +17,7 @@ tags:
 meta:
   _wpas_done_all: '1'
   _edit_last: '1'
-author:
-  login: admin
-  email: huszty.gergo@digitaltrip.hu
-  display_name: libesz
-  first_name: Gergo
-  last_name: Huszty
+author: Gergo Huszty
 permalink: "/reverse-engineering-my-fiber-to-the_home-device/"
 ---
 This time I wrote a blogpost on medium.com. [Check it out here](https://medium.com/@huszty/reverse-engineering-my-fiber-to-the-home-gpon-device-83527ceeddde).

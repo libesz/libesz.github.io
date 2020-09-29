@@ -15,12 +15,7 @@ categories:
 tags: []
 meta:
   _edit_last: '1'
-author:
-  login: admin
-  email: huszty.gergo@digitaltrip.hu
-  display_name: libesz
-  first_name: Gergo
-  last_name: Huszty
+author: Gergo Huszty
 permalink: "/site-is-over-10000-visits/"
 ---
 Thanks! :D

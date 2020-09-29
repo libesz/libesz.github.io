@@ -22,12 +22,7 @@ meta:
   _wpas_done_all: '1'
   _encloseme: '1'
   _pingme: '1'
-author:
-  login: admin
-  email: huszty.gergo@digitaltrip.hu
-  display_name: libesz
-  first_name: Gergo
-  last_name: Huszty
+author: Gergo Huszty
 permalink: "/diy-irrigation-system/"
 ---
 This post is about my irrigation system built last spring. I thought I can create a smarter sprinkler computer than the stock ones. The design constraints were roughly these:

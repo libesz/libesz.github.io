@@ -17,12 +17,7 @@ tags:
 - shift register
 meta:
   _edit_last: '1'
-author:
-  login: admin
-  email: huszty.gergo@digitaltrip.hu
-  display_name: libesz
-  first_name: Gergo
-  last_name: Huszty
+author: Gergo Huszty
 permalink: "/bicolor-led-matrix-with-atmega8/"
 excerpt: A basic concept about how to control a bicolor 8x8 led matrix with AVR
 ---

@@ -22,12 +22,7 @@ meta:
   _wpas_done_all: '1'
   _jetpack_dont_email_post_to_subs: '1'
   _wp_old_slug: automatic-how-water-circulator
-author:
-  login: admin
-  email: huszty.gergo@digitaltrip.hu
-  display_name: libesz
-  first_name: Gergo
-  last_name: Huszty
+author: Gergo Huszty
 permalink: "/automatic-hot-water-circulator/"
 ---
 After moving to a new place, I've found new challenges to solve here and there. One such unresolved thing was the hot water circulation control. In this post I present one possible solution which is according to the user's behavior.

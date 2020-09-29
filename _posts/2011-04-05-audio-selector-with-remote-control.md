@@ -25,12 +25,7 @@ tags:
 - udn2981
 meta:
   _edit_last: '1'
-author:
-  login: admin
-  email: huszty.gergo@digitaltrip.hu
-  display_name: libesz
-  first_name: Gergo
-  last_name: Huszty
+author: Gergo Huszty
 permalink: "/audio-selector-with-remote-control/"
 ---
 Hi again!

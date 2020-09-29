@@ -21,12 +21,7 @@ tags:
 - usb
 meta:
   _edit_last: '1'
-author:
-  login: admin
-  email: huszty.gergo@digitaltrip.hu
-  display_name: libesz
-  first_name: Gergo
-  last_name: Huszty
+author: Gergo Huszty
 permalink: "/ir-remote-switch/"
 excerpt: This is a post about to building an AVR based infra red remote controller
   reciever to switch some electronic devices trough 230V plug sockets or trough 5V

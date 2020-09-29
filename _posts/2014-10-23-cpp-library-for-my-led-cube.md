@@ -20,12 +20,7 @@ tags:
 meta:
   _edit_last: '1'
   _wpas_done_all: '1'
-author:
-  login: admin
-  email: huszty.gergo@digitaltrip.hu
-  display_name: libesz
-  first_name: Gergo
-  last_name: Huszty
+author: Gergo Huszty
 permalink: "/cpp-library-for-my-led-cube/"
 ---
 In the last two years I was mainly interrested in exploring C++. One result of my learning is the subject of this post. I started to reimplement the [snake](https://libesz.digitaltrip.hu/3d-snake-ledcube/) game using C++11 for the [LED cube](https://libesz.digitaltrip.hu/ledcube/). Later I divided the code into two sections. The general part became a base library for creating games or animations. The snake specific code is now only an application, which is based on the general library part. Later, the famous [2048 game](http://gabrielecirulli.github.io/2048/) was also implemented on top of the library.

@@ -19,12 +19,7 @@ tags:
 - rtc
 meta:
   _edit_last: '1'
-author:
-  login: admin
-  email: huszty.gergo@digitaltrip.hu
-  display_name: libesz
-  first_name: Gergo
-  last_name: Huszty
+author: Gergo Huszty
 permalink: "/digital-clock/"
 excerpt: A summary about how to build a fully functional seven segment LED clock from
   a reused old display

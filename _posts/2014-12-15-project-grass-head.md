@@ -22,12 +22,7 @@ meta:
   _oembed_c08332ac40e076be73a83a0e6da00d5b: <iframe width="500" height="375" src="https://www.youtube.com/embed/6GFpo6b_j7E?feature=oembed"
     frameborder="0" allowfullscreen></iframe>
   _oembed_time_c08332ac40e076be73a83a0e6da00d5b: '1477220086'
-author:
-  login: admin
-  email: huszty.gergo@digitaltrip.hu
-  display_name: libesz
-  first_name: Gergo
-  last_name: Huszty
+author: Gergo Huszty
 permalink: "/project-grass-head/"
 ---
 ## Story

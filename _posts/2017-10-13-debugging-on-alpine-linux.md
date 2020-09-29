@@ -23,12 +23,7 @@ meta:
   _oembed_4c9d35dc5c43766e899ecec6c0fffba8: "{{unknown}}"
   _oembed_b01a261f3549a8385fa618cf14d5a258: "{{unknown}}"
   _wpas_done_all: '1'
-author:
-  login: admin
-  email: huszty.gergo@digitaltrip.hu
-  display_name: libesz
-  first_name: Gergo
-  last_name: Huszty
+author: Gergo Huszty
 permalink: "/debugging-on-alpine-linux/"
 ---
 In one of my previous posts I [explained](https://libesz.digitaltrip.hu/linux-based-router-reloaded/) my renewed router / home server. One task of the box is to serve video/audio content on DLNA. One of the easy selection in this area is minidlna to do the streaming. So I grabbed the first working [minidlna docker container](https://hub.docker.com/r/vimagick/minidlna/), which in practice Alpine Linux based and started to [use](https://github.com/libesz/lhs-ansible/blob/master/roles/minidlna/tasks/main.yml) that.

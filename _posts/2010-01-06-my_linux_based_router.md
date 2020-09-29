@@ -17,12 +17,7 @@ tags:
 meta:
   _edit_last: '1'
   _wp_old_slug: '2'
-author:
-  login: admin
-  email: huszty.gergo@digitaltrip.hu
-  display_name: libesz
-  first_name: Gergo
-  last_name: Huszty
+author: Gergo Huszty
 permalink: "/my_linux_based_router/"
 excerpt: Some idea in the "how to build a home server with cheap and low power consuming
   hardware" topic :)
