@@ -128,7 +128,79 @@ If I remember correctly, I found my sample [here](http://www.gentoo.org/doc/en/h
 I edited it to meet my needs, and now it look's like this:
 
 ```
-#!/bin/sh #Load kernel modules modprobe ip\_conntrack\_ftp #First we flush our current rules iptables -F iptables -t nat -F #Setup default policies to handle unmatched traffic iptables -P INPUT ACCEPT iptables -P OUTPUT ACCEPT iptables -P FORWARD DROP #Interfaces export LAN=eth1 export WAN=eth0 #detect WAN IP export WANIP=`ifconfig ${WAN} | grep inet | cut -d: -f 2 | cut -d' ' -f 1` #Shitlist - If you know some bad-bad guy's IP or IP range #iptables -A INPUT -i ${WAN} -s xxx.xxx.xxx.xxx/y -j DROP #Then we lock our services so they only work from the LAN iptables -I INPUT 1 -i ${LAN} -j ACCEPT iptables -I INPUT 1 -i lo -j ACCEPT iptables -A INPUT -p UDP --dport bootps -i ! ${LAN} -j REJECT iptables -A INPUT -p UDP --dport domain -i ! ${LAN} -j REJECT #Allow access to our server from the WAN #iptables -A INPUT -p TCP --dport ftp -i ${WAN} -j ACCEPT #iptables -A INPUT -p TCP --dport 17654 -i ${WAN} -j ACCEPT #etc. #Drop TCP / UDP packets to privileged ports iptables -A INPUT -p TCP -i ! ${LAN} -d 0/0 --dport 0:1023 -j DROP iptables -A INPUT -p UDP -i ! ${LAN} -d 0/0 --dport 0:1023 -j DROP #Port forwarding to the LAN machines iptables -t nat -A PREROUTING -i ${WAN} -p tcp --dport 12345 -j DNAT --to 192.168.1.99:12345 #Finally we add the rules for NAT iptables -I FORWARD -i ${LAN} -d 192.168.1.0/255.255.255.0 -j DROP iptables -A FORWARD -i ${LAN} -s 192.168.1.0/255.255.255.0 -j ACCEPT iptables -A FORWARD -i ${WAN} -d 192.168.1.0/255.255.255.0 -j ACCEPT iptables -t nat -A POSTROUTING -o ${WAN} -j MASQUERADE #DNAT 22 to 433 from some special places. It can happened that some proxy or firewall blocks the 22 port. From there you can not access your router. This is bad :) but if that firewall allows to connect trough 443 (https), and usually allows, you can specify IP ranges, from where the router accepts the connection on the TCP port 443, and forwards it to the 22 locally. #iptables -t nat -A PREROUTING -i ${WAN} -p tcp --source xxx.xxx.xxx.xxx/y--dport 443 -j DNAT --to ${WANIP}:22 #Tell the kernel that ip forwarding is OK echo 1 \> /proc/sys/net/ipv4/ip\_forward for f in /proc/sys/net/ipv4/conf/\*/rp\_filter ; do echo 1 \> $f ; done
+#!/bin/sh
+
+#Load kernel modules
+
+modprobe ip_conntrack_ftp
+
+#First we flush our current rules
+
+iptables -F
+
+iptables -t nat -F
+#Setup default policies to handle unmatched traffic
+
+iptables -P INPUT ACCEPT
+
+iptables -P OUTPUT ACCEPT
+
+iptables -P FORWARD DROP
+#Interfaces
+
+export LAN=eth1
+
+export WAN=eth0
+#detect WAN IP
+
+export WANIP=`ifconfig ${WAN} | grep inet | cut -d: -f 2 | cut -d' ' -f 1`
+#Shitlist - If you know some bad-bad guy's IP or IP range
+
+#iptables -A INPUT -i ${WAN} -s xxx.xxx.xxx.xxx/y -j DROP
+#Then we lock our services so they only work from the LAN
+
+iptables -I INPUT 1 -i ${LAN} -j ACCEPT
+
+iptables -I INPUT 1 -i lo -j ACCEPT
+
+iptables -A INPUT -p UDP --dport bootps -i ! ${LAN} -j REJECT
+
+iptables -A INPUT -p UDP --dport domain -i ! ${LAN} -j REJECT
+
+#Allow access to our server from the WAN
+
+#iptables -A INPUT -p TCP --dport ftp -i ${WAN} -j ACCEPT
+
+#iptables -A INPUT -p TCP --dport 17654 -i ${WAN} -j ACCEPT
+
+#etc.
+
+#Drop TCP / UDP packets to privileged ports
+
+iptables -A INPUT -p TCP -i ! ${LAN} -d 0/0 --dport 0:1023 -j DROP
+
+iptables -A INPUT -p UDP -i ! ${LAN} -d 0/0 --dport 0:1023 -j DROP
+#Port forwarding to the LAN machines
+
+iptables -t nat -A PREROUTING -i ${WAN} -p tcp --dport 12345 -j DNAT --to 192.168.1.99:12345
+#Finally we add the rules for NAT
+
+iptables -I FORWARD -i ${LAN} -d 192.168.1.0/255.255.255.0 -j DROP
+
+iptables -A FORWARD -i ${LAN} -s 192.168.1.0/255.255.255.0 -j ACCEPT
+
+iptables -A FORWARD -i ${WAN} -d 192.168.1.0/255.255.255.0 -j ACCEPT
+
+iptables -t nat -A POSTROUTING -o ${WAN} -j MASQUERADE
+#DNAT 22 to 433 from some special places. It can happened that some proxy or firewall blocks the 22 port. From there you can not access your router. This is bad :) but if that firewall allows to connect trough 443 (https), and usually allows, you can specify IP ranges, from where the router accepts the connection on the TCP port 443, and forwards it to the 22 locally.
+
+#iptables -t nat -A PREROUTING -i ${WAN} -p tcp --source xxx.xxx.xxx.xxx/y--dport 443 -j DNAT --to ${WANIP}:22
+
+#Tell the kernel that ip forwarding is OK
+
+echo 1 > /proc/sys/net/ipv4/ip_forward
+
+for f in /proc/sys/net/ipv4/conf/*/rp_filter ; do echo 1 > $f ; done
 ```
 
 You can place this file for example in /etc/init.d/router, make it executable and make a symlink for it with:

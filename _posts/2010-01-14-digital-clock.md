@@ -43,7 +43,26 @@ The last difficult thing was the software. There were too many entities about th
 First is the characters look, what I wanted to use. It has no connection with the digits on the display, it just describes the lighting segments of a digit. I've put the data in an array:
 
 ```
-volatile unsigned char number\_look[17]= { 0b0111111, //0 0b0000110, //1 0b1011011, //2 0b1001111, //3 0b1100110, //4 0b1101101, //5 0b1111101, //6 0b0000111, //7 0b1111111, //8 0b1101111, //9 0b1110111, //a 0b1111100, //b 0b0111001, //c 0b1011110, //d 0b1111001, //e 0b1110001, //f 0b0000000 //empty };
+volatile unsigned char number_look[17]=
+{
+	0b0111111,	//0
+	0b0000110,	//1
+	0b1011011,	//2
+	0b1001111,	//3
+	0b1100110,	//4
+	0b1101101,	//5
+	0b1111101,	//6
+	0b0000111,	//7
+	0b1111111,	//8
+	0b1101111,	//9
+	0b1110111,	//a
+	0b1111100,	//b
+	0b0111001,	//c
+	0b1011110,	//d
+	0b1111001,	//e
+	0b1110001,	//f
+	0b0000000	//empty
+};
 ```
 
 I made hexa letters as well.
@@ -59,7 +78,46 @@ The second thing is the connection between the segments physical (which digit's 
 That is 6 bits at all, so one byte is enough. So I soldered the pieces together and I didn't have to mind the exact IO pin for each segment, because I will map them by this array... I just left the I²C and two pins for the cathodes free, then just soldered the anodes in randomly (also the colon). After it, I wrote a program which was set one bit on one PORT to true, and by pressing the button it changed to an other (one cathode was turned on as well of course). By this, I could identify all the LEDs place, cathode and the PORTs connection. I made tables of the pins and the segment ID relations, two for the two cathodes. Based on this, I could make the character array:
 
 ```
-/\* 0th bit (LSB): anode ID, 0 or 1 1st-2nd : PORT ID PORTB: 0 PORTC: 1 PORTD: 2 3rd-5th : pin number 0-7 6th-7th : no meaning (0) \*/ volatile unsigned char segments[28]= { 0b00011000, //0 0b00010001, //1 0b00101001, //2 0b00100000, //3 0b00100001, //4 0b00000000, //5 0b00011001, //6 0b00010011, //7 0b00000011, //8 0b00001011, //9 0b00001010, //10 0b00101000, //11 0b00010010, //12 0b00000010, //13 0b00011010, //14 0b00000000, //15 0b00101100, //16 0b00101101, //17 0b00111001, //18 0b00011011, //19 0b00000001, //20 0b00001101, //21 0b00110001, //22 0b00100101, //23 0b00100100, //24 0b00111000, //25 0b00001100, //26 0b00110000 //27 };
+/*
+0th bit (LSB): anode ID, 0 or 1
+1st-2nd      : PORT ID
+                PORTB: 0
+                PORTC: 1
+                PORTD: 2
+3rd-5th      : pin number 0-7
+6th-7th      : no meaning (0)
+*/
+volatile unsigned char segments[28]=
+{
+	0b00011000, //0
+	0b00010001, //1
+	0b00101001, //2
+	0b00100000, //3
+	0b00100001, //4
+	0b00000000, //5
+	0b00011001, //6
+	0b00010011, //7
+	0b00000011, //8
+	0b00001011, //9
+	0b00001010, //10
+	0b00101000, //11
+	0b00010010, //12
+	0b00000010, //13
+	0b00011010, //14
+	0b00000000, //15
+	0b00101100, //16
+	0b00101101, //17
+	0b00111001, //18
+	0b00011011, //19
+	0b00000001, //20
+	0b00001101, //21
+	0b00110001, //22
+	0b00100101, //23
+	0b00100100, //24
+	0b00111000, //25
+	0b00001100, //26
+	0b00110000  //27
+};
 ```
 
 Based on this array, I could draw the schematic:
