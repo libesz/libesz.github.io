@@ -32,7 +32,7 @@ Today I will show you, how I built my digital clock. Many years ago, when I didn
 
 ## The hardware
 
-It is based on a reused 3 and 3/4 digit, red LED display from an old, damaged digital clock. It has a type printed on it: _FTTL 655S_. It was originally driven dy an NLE2062 IC. I think this type is very common in the low quality/price alarm digital clocks, so you can easily find one usable display. So I desoldered it and started to find out the internal setup of the LEDs. Finally I found a pdf about a clock kit, and there was the same type of display.[![]({{ site.baseurl }}/assets/images/2010/01/display-300x201.png "display")](https://libesz.digitaltrip.hu/wp-content/uploads/display.png)
+It is based on a reused 3 and 3/4 digit, red LED display from an old, damaged digital clock. It has a type printed on it: _FTTL 655S_. It was originally driven dy an NLE2062 IC. I think this type is very common in the low quality/price alarm digital clocks, so you can easily find one usable display. So I desoldered it and started to find out the internal setup of the LEDs. Finally I found a pdf about a clock kit, and there was the same type of display.[![]({{ site.baseurl }}/assets/images/2010/01/display-300x201.png "display")]({{ site.baseurl }}/assets/images/2010/01/display.png)
 
 The structure is not so understandable at first. The main thing is that, it has two common cathode, and many common anode, which are connected to two LEDs, one-one with the cathodes. So we will need to multiplex the displaying with the two cathodes, and remembering that, the anodes are controlling different segments when the other cathode is used. For the clock I needed 27 segments (3x7 for the full digits, and 6 for the first) in 24 hour mode, and the blinking colon. If we look at the schematic of the display, we count 15 anode pins for these 28 led segments. Ok, 15 pins on the controller. We need two more for the cathodes. The sum is 17. The atmega8 has 22 programmable IO pin, if we don't count the RESET pin and using internal clock source. For the proper time, I wanted to use some kind of RTC (Read Time Clock) IC. The choice was the Dallas's [DS1307](http://www.foxdelta.com/products/wx1/DS1307.pdf). It can handle two VCC, ideal for battery backup and it uses I²C. Because there are five free pins after the segments, and I²C costs other two, there are 3 more. I used two for buttons (hour and minute adjusting).
 
@@ -50,7 +50,7 @@ I made hexa letters as well.
 
 The second thing is the connection between the segments physical (which digit's which segment is it) and logical place (which cathode and which AVR pin is connected to it). Then to handle the segments differently, they has to got some ID, practically a number. So I added a number to all the physical segments:
 
-[![]({{ site.baseurl }}/assets/images/2010/01/display3-300x89.png "segment numbers")](https://libesz.digitaltrip.hu/wp-content/uploads/display3.png)Now I could index an array by these numbers, and the array itself stored the logical properties of the segment, such as:
+[![]({{ site.baseurl }}/assets/images/2010/01/display3-300x89.png "segment numbers")]({{ site.baseurl }}/assets/images/2010/01/display3.png)Now I could index an array by these numbers, and the array itself stored the logical properties of the segment, such as:
 
 - the port on the AVR (2 bits to indicate PORTB,C or D)
 - the pin of the port (3 bits to indicate the PIN 0-7)
@@ -64,7 +64,7 @@ That is 6 bits at all, so one byte is enough. So I soldered the pieces together 
 
 Based on this array, I could draw the schematic:
 
-[![]({{ site.baseurl }}/assets/images/2010/01/sch-300x163.png "clock\_sch")](https://libesz.digitaltrip.hu/wp-content/uploads/sch.png)
+[![]({{ site.baseurl }}/assets/images/2010/01/sch-300x163.png "clock\_sch")]({{ site.baseurl }}/assets/images/2010/01/sch.png)
 
 Now we need only the algorithm to draw different characters on different digits. We need to change the used cathode periodically, so we will draw the half of the 'frame' at once (for this, a timer interrupt was used, to keep the period time). An other thing is to find a segment. Because they have ID, and they are in logical order, we know that the first digits 'a' segment the 0th, the second's is the 7th, the 'g' of the last digit is the last (27th) and so on.
 
@@ -76,13 +76,13 @@ Other tasks of the AVR:
 
 Some pictures of the result:
 
-[![]({{ site.baseurl }}/assets/images/2010/01/clock_1-300x161.jpg "clock\_1")](https://libesz.digitaltrip.hu/wp-content/uploads/clock_1.jpg)
+[![]({{ site.baseurl }}/assets/images/2010/01/clock_1-300x161.jpg "clock\_1")]({{ site.baseurl }}/assets/images/2010/01/clock_1.jpg)
 
-[![]({{ site.baseurl }}/assets/images/2010/01/clock_2-300x130.jpg "clock\_2")](https://libesz.digitaltrip.hu/wp-content/uploads/clock_2.jpg)
+[![]({{ site.baseurl }}/assets/images/2010/01/clock_2-300x130.jpg "clock\_2")]({{ site.baseurl }}/assets/images/2010/01/clock_2.jpg)
 
-[![]({{ site.baseurl }}/assets/images/2010/01/clock_3-300x297.jpg "clock\_3")](https://libesz.digitaltrip.hu/wp-content/uploads/clock_3.jpg)
+[![]({{ site.baseurl }}/assets/images/2010/01/clock_3-300x297.jpg "clock\_3")]({{ site.baseurl }}/assets/images/2010/01/clock_3.jpg)
 
-[![]({{ site.baseurl }}/assets/images/2010/01/clock_4-300x147.jpg "clock\_4")](https://libesz.digitaltrip.hu/wp-content/uploads/clock_4.jpg)
+[![]({{ site.baseurl }}/assets/images/2010/01/clock_4-300x147.jpg "clock\_4")]({{ site.baseurl }}/assets/images/2010/01/clock_4.jpg)
 
 [Here are the code and the schematic](https://libesz.digitaltrip.hu/downloads/clock.zip)
 

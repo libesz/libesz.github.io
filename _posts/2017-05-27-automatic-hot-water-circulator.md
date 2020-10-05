@@ -59,7 +59,7 @@ The code is written in C++ and using my base library [from here](https://github.
 
 The essence of the solution is obviously the trigger which comes from the alarm system. AVR only enlarges the trigger time from the movement interval to the necessary time which is needed for the water to take the loop.
 
-[![]({{ site.baseurl }}/assets/images/2017/05/hwc.png)](https://libesz.digitaltrip.hu/wp-content/uploads/hwc.png)The schematic is crazy simple: 12V-5V conversion, input receiver part, output part.
+[![]({{ site.baseurl }}/assets/images/2017/05/hwc.png)]({{ site.baseurl }}/assets/images/2017/05/hwc.png)The schematic is crazy simple: 12V-5V conversion, input receiver part, output part.
 
 The code is also very simple as you might think. It has to only maintain two time intervals, which are connected. The fancy part is that I used my AVR C++ library, presented in the [last post](https://libesz.digitaltrip.hu/cpp-on-avr/). There I already created the low-level parts for this application in the base library:
 
@@ -78,11 +78,11 @@ Pretty easy to consume I think. I became a C++ fan on AVRs :). As usual, my AVR 
 
 Some visualization of the end result:
 
-[![]({{ site.baseurl }}/assets/images/2017/05/IMG_20170527_162739.jpg)](https://libesz.digitaltrip.hu/wp-content/uploads/IMG_20170527_162739.jpg)
+[![]({{ site.baseurl }}/assets/images/2017/05/IMG_20170527_162739.jpg)]({{ site.baseurl }}/assets/images/2017/05/IMG_20170527_162739.jpg)
 
-[![]({{ site.baseurl }}/assets/images/2017/05/IMG_20170527_192342.jpg)](https://libesz.digitaltrip.hu/wp-content/uploads/IMG_20170527_192342.jpg)
+[![]({{ site.baseurl }}/assets/images/2017/05/IMG_20170527_192342.jpg)]({{ site.baseurl }}/assets/images/2017/05/IMG_20170527_192342.jpg)
 
-[![]({{ site.baseurl }}/assets/images/2017/05/IMG_20170527_192347.jpg)](https://libesz.digitaltrip.hu/wp-content/uploads/IMG_20170527_192347.jpg)
+[![]({{ site.baseurl }}/assets/images/2017/05/IMG_20170527_192347.jpg)]({{ site.baseurl }}/assets/images/2017/05/IMG_20170527_192347.jpg)
 
 Resources are available in the following repo on [github](https://github.com/libesz/hwc).
 

@@ -37,9 +37,9 @@ So I decided to create a time lapse video of the grasshead while the grass is gr
 
 I had to achieve the maximum battery life for the camera so I set it to sleep after one minute of idle. To get fairly constant light, I used flash for the pictures and F8 aperture for the good depth of field. There was pretty cloudy days of this week, so the sun wasn't bother the pictures too much.
 
-## [![ShutterTimer]({{ site.baseurl }}/assets/images/2014/12/ShutterTimer-300x141.png)](https://libesz.digitaltrip.hu/wp-content/uploads/ShutterTimer.png)
+## [![ShutterTimer]({{ site.baseurl }}/assets/images/2014/12/ShutterTimer-300x141.png)]({{ site.baseurl }}/assets/images/2014/12/ShutterTimer.png)
 
-## [![SONY DSC]({{ site.baseurl }}/assets/images/2014/12/DSC07485-300x199.jpg)](https://libesz.digitaltrip.hu/wp-content/uploads/DSC07485.jpg) [![SONY DSC]({{ site.baseurl }}/assets/images/2014/12/DSC07488-300x199.jpg)](https://libesz.digitaltrip.hu/wp-content/uploads/DSC07488.jpg)
+## [![SONY DSC]({{ site.baseurl }}/assets/images/2014/12/DSC07485-300x199.jpg)]({{ site.baseurl }}/assets/images/2014/12/DSC07485.jpg) [![SONY DSC]({{ site.baseurl }}/assets/images/2014/12/DSC07488-300x199.jpg)]({{ site.baseurl }}/assets/images/2014/12/DSC07488.jpg)
 
 I installed one high brightness LED to help the autofocus when the camera is waking up from sleeping during the night.
 

@@ -76,7 +76,7 @@ An other example application is the LED cube adaption of the famous [2048 game](
 
 Just like in the snake game, the main function only wires the game parts together and let the _ClockSource_ to react to the user's keypresses. That means that here the other, _CondVarClockSource_ is used because the content need to be only rendered when some keypress occured. I've created an UML diagram to represent the 2048 game classes:
 
-[![2048_uml]({{ site.baseurl }}/assets/images/2014/10/2048_uml-300x194.png)](https://libesz.digitaltrip.hu/wp-content/uploads/2048_uml.png)
+[![2048_uml]({{ site.baseurl }}/assets/images/2014/10/2048_uml-300x194.png)]({{ site.baseurl }}/assets/images/2014/10/2048_uml.png)
 
 Code is on the [github](https://github.com/libesz/FadeCube_cpp). It is developed as Eclipse CDT projects under Linux.
 

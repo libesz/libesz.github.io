@@ -41,11 +41,11 @@ Challenge accepted: reload the central part of our IT infrastructure at home. Ev
 
 From gigabit point of view we were almost already fine. On the LAN side the 100Mb/s switch died some years ago so that I bought a new gigabit version of that. We only need some gigabit NIC to go. To fulfill the remaining requirements, I started to check the ebay-equivalent hungarian market for some mint conditioned, used and cheap mini-itx motherboard. After a few weeks I got this: [Asrock N3700-ITX](http://www.asrock.com/mb/Intel/N3700-ITX/). It costed half as much as was the last price in the stock, like 60 EUR. The [Pentium N3700](http://ark.intel.com/products/87261/Intel-Pentium-Processor-N3700-2M-Cache-up-to-2_40-GHz) has built-in AES capabilities and 4 real cores, based on Braswell. I had a spare Intel 1000 PT for secondary ethernet card and I pulled out a 2GB DDR3 SO-DIMM from my laptop, so we are good to go from HW PoV.
 
-[caption id="attachment\_762" align="aligncenter" width="300"][![The old retired HW.]({{ site.baseurl }}/assets/images/2016/10/IMG_20161020_183659-300x225.jpg)](https://libesz.digitaltrip.hu/wp-content/uploads/IMG_20161020_183659.jpg) The old retired HW.[/caption]
+[caption id="attachment\_762" align="aligncenter" width="300"][![The old retired HW.]({{ site.baseurl }}/assets/images/2016/10/IMG_20161020_183659-300x225.jpg)]({{ site.baseurl }}/assets/images/2016/10/IMG_20161020_183659.jpg) The old retired HW.[/caption]
 
-[caption id="attachment\_761" align="aligncenter" width="300"][![The new mobo and the Intel NIC]({{ site.baseurl }}/assets/images/2016/10/IMG_20161020_183726-300x225.jpg)](https://libesz.digitaltrip.hu/wp-content/uploads/IMG_20161020_183726.jpg) The new mobo and the Intel NIC[/caption]
+[caption id="attachment\_761" align="aligncenter" width="300"][![The new mobo and the Intel NIC]({{ site.baseurl }}/assets/images/2016/10/IMG_20161020_183726-300x225.jpg)]({{ site.baseurl }}/assets/images/2016/10/IMG_20161020_183726.jpg) The new mobo and the Intel NIC[/caption]
 
-[caption id="attachment\_760" align="aligncenter" width="300"][![The sad fate project box in the middle of the operation. I had to drill yet another hole to have the new NIC fixed.]({{ site.baseurl }}/assets/images/2016/10/IMG_20161020_183740-300x225.jpg)](https://libesz.digitaltrip.hu/wp-content/uploads/IMG_20161020_183740.jpg) The sad fate project box in the middle of the operation. I had to drill yet another hole to have the new NIC fixed.[/caption]
+[caption id="attachment\_760" align="aligncenter" width="300"][![The sad fate project box in the middle of the operation. I had to drill yet another hole to have the new NIC fixed.]({{ site.baseurl }}/assets/images/2016/10/IMG_20161020_183740-300x225.jpg)]({{ site.baseurl }}/assets/images/2016/10/IMG_20161020_183740.jpg) The sad fate project box in the middle of the operation. I had to drill yet another hole to have the new NIC fixed.[/caption]
 
 ## Software
 

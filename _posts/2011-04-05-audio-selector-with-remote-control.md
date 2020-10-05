@@ -40,14 +40,14 @@ I could say it is a general remote control reciever library with a demo applicat
 
 The requirement was the good sound quality of course, therefore I used relays to route the audio signals. Here is the schematic (VCC is 5V):
 
-[![click to enlarge]({{ site.baseurl }}/assets/images/2011/04/audio_switch_6ch-803x1024.png "audio\_switch\_6ch")](https://libesz.digitaltrip.hu/wp-content/uploads/audio_switch_6ch.png)  
+[![click to enlarge]({{ site.baseurl }}/assets/images/2011/04/audio_switch_6ch-803x1024.png "audio\_switch\_6ch")]({{ site.baseurl }}/assets/images/2011/04/audio_switch_6ch.png)  
 Originally it was planned for 8 channels, but it would be too expensive for to more unused relays :-). I designed the PCB and the code, the owner assembled it :-) The result:
 
 &nbsp;
 
-[![]({{ site.baseurl }}/assets/images/2011/04/IMGP8817-300x157.jpg "IMGP8817")](https://libesz.digitaltrip.hu/wp-content/uploads/IMGP8817.jpg)[![]({{ site.baseurl }}/assets/images/2011/04/IMGP8814-300x220.jpg "IMGP8814")](https://libesz.digitaltrip.hu/wp-content/uploads/IMGP8814.jpg)
+[![]({{ site.baseurl }}/assets/images/2011/04/IMGP8817-300x157.jpg "IMGP8817")]({{ site.baseurl }}/assets/images/2011/04/IMGP8817.jpg)[![]({{ site.baseurl }}/assets/images/2011/04/IMGP8814-300x220.jpg "IMGP8814")]({{ site.baseurl }}/assets/images/2011/04/IMGP8814.jpg)
 
-[![]({{ site.baseurl }}/assets/images/2011/04/IMGP8821-e1301423117700-751x1024.jpg "IMGP8821")](https://libesz.digitaltrip.hu/wp-content/uploads/IMGP8821.jpg)[![]({{ site.baseurl }}/assets/images/2011/04/IMGP8823-650x1024.jpg "IMGP8823")](https://libesz.digitaltrip.hu/wp-content/uploads/IMGP8823.jpg)
+[![]({{ site.baseurl }}/assets/images/2011/04/IMGP8821-e1301423117700-751x1024.jpg "IMGP8821")]({{ site.baseurl }}/assets/images/2011/04/IMGP8821.jpg)[![]({{ site.baseurl }}/assets/images/2011/04/IMGP8823-650x1024.jpg "IMGP8823")]({{ site.baseurl }}/assets/images/2011/04/IMGP8823.jpg)
 
 You can see two strange things on the pictures.
 
@@ -72,7 +72,7 @@ And two more for the learning:
 - ir\_start\_learning( number\_of\_the\_signal ); This call will switch the IR stack to learning mode. You can define special conditions for the learning, for example I start it when the first button (on the board) is pressed when the device is switched on. While learning the ir\_handle\_input() still has to be called continously. You can define how much equal samples should recieved, before saving it to the EEPROM. The parameter is the number of the button, you will get this back from ir\_is\_recieve\_ready() whether it identifies the signal.
 - ir\_get\_learning\_state(); This will return the state of the learning, you should call this also in a loop. When the learning is done, you can start the next one or go forward.
 
-[caption id="attachment\_566" align="aligncenter" width="479" caption="Screenshot when the code is compiled to use the debugging"][![]({{ site.baseurl }}/assets/images/2011/04/audio_selector_debug.png "audio\_selector\_debug")](https://libesz.digitaltrip.hu/wp-content/uploads/audio_selector_debug.png)[/caption]
+[caption id="attachment\_566" align="aligncenter" width="479" caption="Screenshot when the code is compiled to use the debugging"][![]({{ site.baseurl }}/assets/images/2011/04/audio_selector_debug.png "audio\_selector\_debug")]({{ site.baseurl }}/assets/images/2011/04/audio_selector_debug.png)[/caption]
 
 &nbsp;
 

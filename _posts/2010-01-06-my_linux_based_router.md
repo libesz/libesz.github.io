@@ -57,15 +57,15 @@ So I saved up some money and decided to upgrade my system to use two HDDs in [RA
 
 I made some pictures about the reconstructing :)
 
-[![alter]({{ site.baseurl }}/assets/images/2010/01/1-300x198.jpg "hdd and it's stand")](https://libesz.digitaltrip.hu/wp-content/uploads/1.jpg)My colleague made me a little stand to get the drives attached to the bottom. The special in it is the 10mm distance what it holds on the left bottom. This is needed because when the enclosure is pieced together, it has a rail under the stand (this was in the way previously to get the hard drive to the bottom).
+[![alter]({{ site.baseurl }}/assets/images/2010/01/1-300x198.jpg "hdd and it's stand")]({{ site.baseurl }}/assets/images/2010/01/1.jpg)My colleague made me a little stand to get the drives attached to the bottom. The special in it is the 10mm distance what it holds on the left bottom. This is needed because when the enclosure is pieced together, it has a rail under the stand (this was in the way previously to get the hard drive to the bottom).
 
-[![]({{ site.baseurl }}/assets/images/2010/01/2-300x196.jpg "hdd and it's stand 2")](https://libesz.digitaltrip.hu/wp-content/uploads/2.jpg)Now I got the chance to say the distances of the screws on the 3,5 " hard drives to the whole world :D, because I coudn't find it in any standard or blog or nowhere on the internet. So every HDD has 3 screwhole per side, the lower distance is (which is between the closest hole to the connector to the center) is 42,5 mm, the other (the bigger, from the center to the orher side) is 60 mm.
+[![]({{ site.baseurl }}/assets/images/2010/01/2-300x196.jpg "hdd and it's stand 2")]({{ site.baseurl }}/assets/images/2010/01/2.jpg)Now I got the chance to say the distances of the screws on the 3,5 " hard drives to the whole world :D, because I coudn't find it in any standard or blog or nowhere on the internet. So every HDD has 3 screwhole per side, the lower distance is (which is between the closest hole to the connector to the center) is 42,5 mm, the other (the bigger, from the center to the orher side) is 60 mm.
 
-[![almost ready]({{ site.baseurl }}/assets/images/2010/01/3-300x229.jpg "almost ready")](https://libesz.digitaltrip.hu/wp-content/uploads/3.jpg)Every pieces in the house :) It has front USB as well.
+[![almost ready]({{ site.baseurl }}/assets/images/2010/01/3-300x229.jpg "almost ready")]({{ site.baseurl }}/assets/images/2010/01/3.jpg)Every pieces in the house :) It has front USB as well.
 
-[![]({{ site.baseurl }}/assets/images/2010/01/4-300x198.jpg "closed")](https://libesz.digitaltrip.hu/wp-content/uploads/4.jpg)Ready to install.
+[![]({{ site.baseurl }}/assets/images/2010/01/4-300x198.jpg "closed")]({{ site.baseurl }}/assets/images/2010/01/4.jpg)Ready to install.
 
-[![]({{ site.baseurl }}/assets/images/2010/01/5-300x224.jpg "the back")](https://libesz.digitaltrip.hu/wp-content/uploads/5.jpg)This is the connector side. Yes, the IO shield is still missing, I will make it there somehow. Here You can see the green UTP cable, connected to the second netword card and to the LAN switch.
+[![]({{ site.baseurl }}/assets/images/2010/01/5-300x224.jpg "the back")]({{ site.baseurl }}/assets/images/2010/01/5.jpg)This is the connector side. Yes, the IO shield is still missing, I will make it there somehow. Here You can see the green UTP cable, connected to the second netword card and to the LAN switch.
 
 So this is my current hardware configuration. My only need is to make the LAN side 1 Gigabit wide :)
 
