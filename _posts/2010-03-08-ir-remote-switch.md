@@ -87,7 +87,7 @@ Here are some picture of the complete device:
 
 [![]({{ site.baseurl }}/assets/images/2010/03/4417146321_0f3f15096b_b.jpg)]({{ site.baseurl }}/assets/images/2010/03/4417146321_0f3f15096b_b.jpg)
 
-[![]({{ site.baseurl }}/assets/images/2010/03/4417896648_1695987592_b.jpg "ir device 2")]({{ site.baseurl }}/assets/images/2010/03/4417896648)
+[![]({{ site.baseurl }}/assets/images/2010/03/4417896648_1695987592_b.jpg "ir device 2")]({{ site.baseurl }}/assets/images/2010/03/4417896648_1695987592_b.jpg)
 
 The five 5V outputs are on DC jack connectors (the first three LEDs are for the 230V outputs)
 
