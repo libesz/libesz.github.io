@@ -50,7 +50,7 @@ For such a complex hardware, the software is also pretty huge :-) . The 1MHz dow
 
 The elapsed time is counted in the timer interrupt. First the AF is triggered 4 seconds before the deadline. This was far enough for my camera to wake up from sleep mode and find the focus (if focus is not found when the shutter is triggered, it won't make the picture). One second before the selected time interval it triggers the shutter as well. Than it releases both trigger contacts.
 
-```
+```c
 /* 
  * ShutterTimer.c 
  * 

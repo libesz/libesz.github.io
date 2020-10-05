@@ -127,7 +127,7 @@ If I remember correctly, I found my sample [here](http://www.gentoo.org/doc/en/h
 
 I edited it to meet my needs, and now it look's like this:
 
-```
+```shell
 #!/bin/sh
 
 #Load kernel modules

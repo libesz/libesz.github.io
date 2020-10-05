@@ -68,7 +68,7 @@ The code is also very simple as you might think. It has to only maintain two tim
 
 The missing part is the hold-off login, which became also a similar class to the _timed output_. This is the _Trigger_ class.
 
-```
+```c
 #include <avr/io.h>
 #include <avr/interrupt.h>
 

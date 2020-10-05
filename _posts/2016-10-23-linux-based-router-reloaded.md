@@ -65,7 +65,7 @@ Of course, the real advantage of ansible is if you have dozens of servers or VM 
 
 Let's have an example: we want to set up a dhcp service with dnsmasq on a debian system. You can do it manually: use apt-get/aptitude to install the package and the dependencies, tweak the config file manually, restart the service. Or you can put the steps into a shell script if you want some self-documentation. In this case you have a chance to reproduce the tasks in the future. Now, with configuration automation tools you have to only declare the desired state of the system instead of scripting everything manually. Of course you express the steps in some sense, but due to the idempotent nature, whenever you run the playbook again, it will make changes only where the actual state of the target system differs from the desired state. Let's see the dnsmasq's task file:
 
-```
+```yaml
 - name: Install dnsmasq
   become: yes
   apt: pkg=dnsmasq state=installed
@@ -78,14 +78,14 @@ Let's have an example: we want to set up a dhcp service with dnsmasq on a debian
 
 What do we have here?! The first step is more or less straightforward: install the dnsmasq package and the dependencies with apt package manager. The become statement means it must run with superuser, with a preselected method (e.g. sudo). The task statement is more interesting. It refers to a template configuration dnsmasq.conf.j2. The content of the template can be the following:
 
-```
+```ini
 dhcp-range={{lanNicName}},192.168.1.20,192.168.1.98,72h
 interface={{lanNicName}}
 ```
 
 Ansible's native template filling mechanism is called [jinja2](http://jinja.pocoo.org/docs/dev/). You can define a variable set separated from your tasks and feed when you start the playbook. The other stranger line is the notify statement. You can notify special tasks called handlers. They are invoked only if the caller task made real changes. This handler looks like:
 
-```
+```yaml
 - name: Restart dnsmasq
   become: yes
   service: name=dnsmasq state=restarted

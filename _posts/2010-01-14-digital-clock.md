@@ -42,7 +42,7 @@ The last difficult thing was the software. There were too many entities about th
 
 First is the characters look, what I wanted to use. It has no connection with the digits on the display, it just describes the lighting segments of a digit. I've put the data in an array:
 
-```
+```c
 volatile unsigned char number_look[17]=
 {
 	0b0111111,	//0
@@ -77,7 +77,7 @@ The second thing is the connection between the segments physical (which digit's 
 
 That is 6 bits at all, so one byte is enough. So I soldered the pieces together and I didn't have to mind the exact IO pin for each segment, because I will map them by this array... I just left the I²C and two pins for the cathodes free, then just soldered the anodes in randomly (also the colon). After it, I wrote a program which was set one bit on one PORT to true, and by pressing the button it changed to an other (one cathode was turned on as well of course). By this, I could identify all the LEDs place, cathode and the PORTs connection. I made tables of the pins and the segment ID relations, two for the two cathodes. Based on this, I could make the character array:
 
-```
+```c
 /*
 0th bit (LSB): anode ID, 0 or 1
 1st-2nd      : PORT ID
