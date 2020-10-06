@@ -54,25 +54,33 @@ I ended up with my ever first Raspberry PI project. There is not any AVR here :)
 
 Unlike my other DIY projects, this one has the extraordinary task to realize e.g. the irrigation water supply network if you prefer end-to-end DIY. This is starting with dig the whole garden&nbsp; :). It took roughly five very long Saturdays for us. According to the well and the pump capacity, we had to create 4 individual water circles. three for the sprinklers and one for the drip lines. We have the luck to have the idle water level starting only 4m under the ground so we have the (more cheaper) pump on the surface and not in the well.
 
-[caption id="attachment\_926" align="aligncenter" width="300"][![]({{ site.baseurl }}/assets/images/2018/06/IMG_20170409_162703-300x225.jpg)]({{ site.baseurl }}/assets/images/2018/06/IMG_20170409_162703.jpg) Dig...[/caption]
+[![]({{ site.baseurl }}/assets/images/2018/06/IMG_20170409_162703-300x225.jpg)]({{ site.baseurl }}/assets/images/2018/06/IMG_20170409_162703.jpg)
+*Dig...*
 
-[caption id="attachment\_905" align="aligncenter" width="225"][![]({{ site.baseurl }}/assets/images/2018/06/IMG_20170423_163902-225x300.jpg)]({{ site.baseurl }}/assets/images/2018/06/IMG_20170423_163902.jpg) ... dig alot ...[/caption]
+[![]({{ site.baseurl }}/assets/images/2018/06/IMG_20170423_163902-225x300.jpg)]({{ site.baseurl }}/assets/images/2018/06/IMG_20170423_163902.jpg)
+*... dig alot ...*
 
-[caption id="attachment\_928" align="aligncenter" width="300"][![]({{ site.baseurl }}/assets/images/2018/06/IMG_20170402_191858-300x225.jpg)]({{ site.baseurl }}/assets/images/2018/06/IMG_20170402_191858.jpg) Even sometimes under the surface.[/caption]
+[![]({{ site.baseurl }}/assets/images/2018/06/IMG_20170402_191858-300x225.jpg)]({{ site.baseurl }}/assets/images/2018/06/IMG_20170402_191858.jpg)
+*Even sometimes under the surface.*
 
-[caption id="attachment\_929" align="aligncenter" width="300"][![]({{ site.baseurl }}/assets/images/2018/06/IMG_20170425_064436-300x225.jpg)]({{ site.baseurl }}/assets/images/2018/06/IMG_20170425_064436.jpg) Eventually the wooden house is progressing. The well still stands off.[/caption]
+[![]({{ site.baseurl }}/assets/images/2018/06/IMG_20170425_064436-300x225.jpg)]({{ site.baseurl }}/assets/images/2018/06/IMG_20170425_064436.jpg)
+*Eventually the wooden house is progressing. The well still stands off.*
 
-[caption id="attachment\_909" align="aligncenter" width="300"][![]({{ site.baseurl }}/assets/images/2018/06/IMG_20170519_192509-300x225.jpg)]({{ site.baseurl }}/assets/images/2018/06/IMG_20170519_192509.jpg) Aaand there it is.[/caption]
+[![]({{ site.baseurl }}/assets/images/2018/06/IMG_20170519_192509-300x225.jpg)]({{ site.baseurl }}/assets/images/2018/06/IMG_20170519_192509.jpg)
+*Aaand there it is.*
 
-[caption id="attachment\_910" align="aligncenter" width="300"][![]({{ site.baseurl }}/assets/images/2018/06/IMG_20170520_161901-300x225.jpg)]({{ site.baseurl }}/assets/images/2018/06/IMG_20170520_161901.jpg) The last small hole shows where the electricity goes in and also the water comes out, directly from the pit under the ground.[/caption]
+[![]({{ site.baseurl }}/assets/images/2018/06/IMG_20170520_161901-300x225.jpg)]({{ site.baseurl }}/assets/images/2018/06/IMG_20170520_161901.jpg)
+*The last small hole shows where the electricity goes in and also the water comes out, directly from the pit under the ground.*
 
 &nbsp;
 
 The well was drilled by professionals, similarly to the wooden house building and a pit under that. The pit was designed so, that all the water related parts are fitted in. This means first of all the well, the four valves, the pump, the pressure control and all the water distributors.
 
-[caption id="attachment\_907" align="aligncenter" width="300"][![]({{ site.baseurl }}/assets/images/2018/06/IMG_20170516_182136-300x225.jpg)]({{ site.baseurl }}/assets/images/2018/06/IMG_20170516_182136.jpg) The water distribution part and the valves are...[/caption]
+[![]({{ site.baseurl }}/assets/images/2018/06/IMG_20170516_182136-300x225.jpg)]({{ site.baseurl }}/assets/images/2018/06/IMG_20170516_182136.jpg)
+*The water distribution part and the valves are...*
 
-[caption id="attachment\_908" align="aligncenter" width="300"][![]({{ site.baseurl }}/assets/images/2018/06/IMG_20170516_200557-300x225.jpg)]({{ site.baseurl }}/assets/images/2018/06/IMG_20170516_200557.jpg) ... semi-assembled.[/caption]
+[![]({{ site.baseurl }}/assets/images/2018/06/IMG_20170516_200557-300x225.jpg)]({{ site.baseurl }}/assets/images/2018/06/IMG_20170516_200557.jpg)
+*... semi-assembled.*
 
 &nbsp;
 
@@ -130,7 +138,8 @@ In order to have a well organized control box, I managed to design a PCB which g
 
 [![]({{ site.baseurl }}/assets/images/2018/06/IMGP3395-300x199.jpg)]({{ site.baseurl }}/assets/images/2018/06/IMGP3395.jpg) [![]({{ site.baseurl }}/assets/images/2018/06/IMGP3394-300x199.jpg)]({{ site.baseurl }}/assets/images/2018/06/IMGP3394.jpg) [![]({{ site.baseurl }}/assets/images/2018/06/IMGP3400-300x199.jpg)]({{ site.baseurl }}/assets/images/2018/06/IMGP3400.jpg) [![]({{ site.baseurl }}/assets/images/2018/06/IMGP3397-300x199.jpg)]({{ site.baseurl }}/assets/images/2018/06/IMGP3397.jpg)
 
-[caption id="attachment\_924" align="aligncenter" width="300"][![]({{ site.baseurl }}/assets/images/2018/06/irrigation_board_anim-300x199.gif)]({{ site.baseurl }}/assets/images/2018/06/irrigation_board_anim.gif) Click on me! I'm animated.[/caption]
+[![]({{ site.baseurl }}/assets/images/2018/06/irrigation_board_anim-300x199.gif)]({{ site.baseurl }}/assets/images/2018/06/irrigation_board_anim.gif)
+*Click on me! I'm animated.*
 
 [![]({{ site.baseurl }}/assets/images/2018/06/IMGP3409-300x199.jpg)]({{ site.baseurl }}/assets/images/2018/06/IMGP3409.jpg) [![]({{ site.baseurl }}/assets/images/2018/06/IMGP3407-300x199.jpg)]({{ site.baseurl }}/assets/images/2018/06/IMGP3407.jpg)[![]({{ site.baseurl }}/assets/images/2018/06/IMGP3410-300x199.jpg)]({{ site.baseurl }}/assets/images/2018/06/IMGP3410.jpg)
 

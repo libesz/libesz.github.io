@@ -72,7 +72,8 @@ And two more for the learning:
 - ir\_start\_learning( number\_of\_the\_signal ); This call will switch the IR stack to learning mode. You can define special conditions for the learning, for example I start it when the first button (on the board) is pressed when the device is switched on. While learning the ir\_handle\_input() still has to be called continously. You can define how much equal samples should recieved, before saving it to the EEPROM. The parameter is the number of the button, you will get this back from ir\_is\_recieve\_ready() whether it identifies the signal.
 - ir\_get\_learning\_state(); This will return the state of the learning, you should call this also in a loop. When the learning is done, you can start the next one or go forward.
 
-[caption id="attachment\_566" align="aligncenter" width="479" caption="Screenshot when the code is compiled to use the debugging"][![]({{ site.baseurl }}/assets/images/2011/04/audio_selector_debug.png "audio\_selector\_debug")]({{ site.baseurl }}/assets/images/2011/04/audio_selector_debug.png)[/caption]
+[![]({{ site.baseurl }}/assets/images/2011/04/audio_selector_debug.png "audio\_selector\_debug")]({{ site.baseurl }}/assets/images/2011/04/audio_selector_debug.png)
+*Screenshot when the code is compiled to use the debugging*
 
 &nbsp;
 
