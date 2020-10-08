@@ -130,22 +130,30 @@ The block scheme is the following:
 
 I waited until all the box parts have arrived and carefully measured them. Than I've drawn everything into the Eagle CAD project to make sure they will fit.
 
-[![]({{ site.baseurl }}/assets/images/2018/06/irrigation_board-300x200.png)]({{ site.baseurl }}/assets/images/2018/06/irrigation_board.png) [![]({{ site.baseurl }}/assets/images/2018/06/irrigation_schematic-294x300.png)]({{ site.baseurl }}/assets/images/2018/06/irrigation_schematic.png)The first two relays are expected to cut the voltage going back to the pump. It has the outgoing terminals right next to the mains input (bottom left on the board). The middle 4 relays are expected to control the valves. The relay terminals are connected to the 24V AC transformer. The 5V adapter is used to supply the Pi itself, the opto-couplers and the relay board. There is an AUX 5V terminal next to the inputs for future use.
+[![]({{ site.baseurl }}/assets/images/2018/06/irrigation_board-300x200.png)]({{ site.baseurl }}/assets/images/2018/06/irrigation_board.png)
+[![]({{ site.baseurl }}/assets/images/2018/06/irrigation_schematic-294x300.png)]({{ site.baseurl }}/assets/images/2018/06/irrigation_schematic.png)
+The first two relays are expected to cut the voltage going back to the pump. It has the outgoing terminals right next to the mains input (bottom left on the board). The middle 4 relays are expected to control the valves. The relay terminals are connected to the 24V AC transformer. The 5V adapter is used to supply the Pi itself, the opto-couplers and the relay board. There is an AUX 5V terminal next to the inputs for future use.
 
 ### Assembling it all together
 
 In order to have a well organized control box, I managed to design a PCB which goes to the box and will be a kind of motherboard for all the inner parts.
 
-[![]({{ site.baseurl }}/assets/images/2018/06/IMGP3395-300x199.jpg)]({{ site.baseurl }}/assets/images/2018/06/IMGP3395.jpg) [![]({{ site.baseurl }}/assets/images/2018/06/IMGP3394-300x199.jpg)]({{ site.baseurl }}/assets/images/2018/06/IMGP3394.jpg) [![]({{ site.baseurl }}/assets/images/2018/06/IMGP3400-300x199.jpg)]({{ site.baseurl }}/assets/images/2018/06/IMGP3400.jpg) [![]({{ site.baseurl }}/assets/images/2018/06/IMGP3397-300x199.jpg)]({{ site.baseurl }}/assets/images/2018/06/IMGP3397.jpg)
+[![]({{ site.baseurl }}/assets/images/2018/06/IMGP3395-300x199.jpg)]({{ site.baseurl }}/assets/images/2018/06/IMGP3395.jpg)
+[![]({{ site.baseurl }}/assets/images/2018/06/IMGP3394-300x199.jpg)]({{ site.baseurl }}/assets/images/2018/06/IMGP3394.jpg)
+[![]({{ site.baseurl }}/assets/images/2018/06/IMGP3400-300x199.jpg)]({{ site.baseurl }}/assets/images/2018/06/IMGP3400.jpg)
+[![]({{ site.baseurl }}/assets/images/2018/06/IMGP3397-300x199.jpg)]({{ site.baseurl }}/assets/images/2018/06/IMGP3397.jpg)
 
 [![]({{ site.baseurl }}/assets/images/2018/06/irrigation_board_anim-300x199.gif)]({{ site.baseurl }}/assets/images/2018/06/irrigation_board_anim.gif)
 *Click on me! I'm animated.*
 
-[![]({{ site.baseurl }}/assets/images/2018/06/IMGP3409-300x199.jpg)]({{ site.baseurl }}/assets/images/2018/06/IMGP3409.jpg) [![]({{ site.baseurl }}/assets/images/2018/06/IMGP3407-300x199.jpg)]({{ site.baseurl }}/assets/images/2018/06/IMGP3407.jpg)[![]({{ site.baseurl }}/assets/images/2018/06/IMGP3410-300x199.jpg)]({{ site.baseurl }}/assets/images/2018/06/IMGP3410.jpg)
+[![]({{ site.baseurl }}/assets/images/2018/06/IMGP3409-300x199.jpg)]({{ site.baseurl }}/assets/images/2018/06/IMGP3409.jpg)
+[![]({{ site.baseurl }}/assets/images/2018/06/IMGP3407-300x199.jpg)]({{ site.baseurl }}/assets/images/2018/06/IMGP3407.jpg)
+[![]({{ site.baseurl }}/assets/images/2018/06/IMGP3410-300x199.jpg)]({{ site.baseurl }}/assets/images/2018/06/IMGP3410.jpg)
 
 ### The end result, mounted on the wall:
 
-[![]({{ site.baseurl }}/assets/images/2018/06/IMGP3423-199x300.jpg)]({{ site.baseurl }}/assets/images/2018/06/IMGP3423.jpg) Cables are arriving from the pit in the black tube.[![]({{ site.baseurl }}/assets/images/2018/06/IMGP3419-300x199.jpg)]({{ site.baseurl }}/assets/images/2018/06/IMGP3419.jpg)
+[![]({{ site.baseurl }}/assets/images/2018/06/IMGP3423-199x300.jpg)]({{ site.baseurl }}/assets/images/2018/06/IMGP3423.jpg) Cables are arriving from the pit in the black tube.
+[![]({{ site.baseurl }}/assets/images/2018/06/IMGP3419-300x199.jpg)]({{ site.baseurl }}/assets/images/2018/06/IMGP3419.jpg)
 
 The PCB has 4 opto-coupled input with LEDs indicating if the input is active. Three of them are simple open-collector prepared, which means the input is considered as High, when the two contacts are connected together and Low, when they aren't. No voltage expected. However there is an input on the board which expects 0-5 V TTL. This is for the USB phone charger which detects the mains on the pump. So the inputs are:
 

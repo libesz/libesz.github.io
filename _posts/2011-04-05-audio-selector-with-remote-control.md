@@ -45,9 +45,11 @@ Originally it was planned for 8 channels, but it would be too expensive for to m
 
 &nbsp;
 
-[![]({{ site.baseurl }}/assets/images/2011/04/IMGP8817-300x157.jpg "IMGP8817")]({{ site.baseurl }}/assets/images/2011/04/IMGP8817.jpg)[![]({{ site.baseurl }}/assets/images/2011/04/IMGP8814-300x220.jpg "IMGP8814")]({{ site.baseurl }}/assets/images/2011/04/IMGP8814.jpg)
+[![]({{ site.baseurl }}/assets/images/2011/04/IMGP8817-300x157.jpg "IMGP8817")]({{ site.baseurl }}/assets/images/2011/04/IMGP8817.jpg)
+[![]({{ site.baseurl }}/assets/images/2011/04/IMGP8814-300x220.jpg "IMGP8814")]({{ site.baseurl }}/assets/images/2011/04/IMGP8814.jpg)
 
-[![]({{ site.baseurl }}/assets/images/2011/04/IMGP8821-e1301423117700-751x1024.jpg "IMGP8821")]({{ site.baseurl }}/assets/images/2011/04/IMGP8821.jpg)[![]({{ site.baseurl }}/assets/images/2011/04/IMGP8823-650x1024.jpg "IMGP8823")]({{ site.baseurl }}/assets/images/2011/04/IMGP8823.jpg)
+[![]({{ site.baseurl }}/assets/images/2011/04/IMGP8821-e1301423117700-751x1024.jpg "IMGP8821")]({{ site.baseurl }}/assets/images/2011/04/IMGP8821.jpg)
+[![]({{ site.baseurl }}/assets/images/2011/04/IMGP8823-650x1024.jpg "IMGP8823")]({{ site.baseurl }}/assets/images/2011/04/IMGP8823.jpg)
 
 You can see two strange things on the pictures.
 
