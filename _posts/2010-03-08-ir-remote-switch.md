@@ -53,7 +53,7 @@ When a button is pressed, the controller transmission starts with a startbit, wh
 
 [![test circuit]({{ site.baseurl }}/assets/images/2010/03/4416953693_e8c9cc9101_o.png "test circuit")]({{ site.baseurl }}/assets/images/2010/03/4416953693_e8c9cc9101_o.png)
 
-And the test program: [link](https://libesz.digitaltrip.hu/downloads/infra_test.zip).
+And the test program: [link]({{ site.baseurl }}/assets/downloads/infra_test.zip).
 
 With this, you can get how many times longer the startbit is (you have to define this to the main program), and the data length. As we don't have to reproduce the signal (just identify it), the reciever needs only the databits (or just an identical piece of it) and the startbit multiplier (see in the code), but we don't have to store the exact time values. As I saw, if (the first or the last) 32 bits are stored for a button, that should be enough. So the definite design has these elements:
 
@@ -80,7 +80,7 @@ Finnaly I bougth some stuff to produce PCBs, with [toner transfer method](http:/
 [![]({{ site.baseurl }}/assets/images/2010/03/4417791364_27b3e03464_b.jpg "pcb\_1")]({{ site.baseurl }}/assets/images/2010/03/4417791364_27b3e03464_b.jpg)
 [![]({{ site.baseurl }}/assets/images/2010/03/4417791368_fa4e27e7ab_b.jpg "pcb\_2")]({{ site.baseurl }}/assets/images/2010/03/4417791368_fa4e27e7ab_b.jpg)
 
-The software has three inputs. One is the remote control itself, and the other is the AVR's USART. The plan was containing that, I want to control the outputs from computer, (then I can connect it to [my router](https://libesz.digitaltrip.hu/my_linux_based_router/) and I can turn on my evaporator from my workplace before I go to home :) ). It has a fully functional prompt&nbsp; with commands to turn on/off outputs, set sleep to an output, initiate learning, etc. . The only thing what the remote control can't do, is to trigger the learning of the buttons, because when the device doesn't know the remote control... ok, I think you understand it :) . So if no USB connection is available, the device has a third input to start learning. As the learning function is not offen used, I took it to one of the pins, which is one on the ISP header (PINB4) anyway. When it learns the buttons, the actual output is switched on while it can recieve enough sample to store (you can define it in the code). The AVR stores the learned buttons (8 for the 8 outputs, and one for the sleep function) in it's internal EEPROM. When you press the sleep button, it waits for an other button, then it turns on that output for ~30 min, than off (you can trigger a sleep for every output in minutes step from computer). You can set some value before you compile the program, for example the amount of the same samples which the device waits while it is learning.
+The software has three inputs. One is the remote control itself, and the other is the AVR's USART. The plan was containing that, I want to control the outputs from computer, (then I can connect it to [my router]({{ site.baseurl }}/my_linux_based_router/) and I can turn on my evaporator from my workplace before I go to home :) ). It has a fully functional prompt&nbsp; with commands to turn on/off outputs, set sleep to an output, initiate learning, etc. . The only thing what the remote control can't do, is to trigger the learning of the buttons, because when the device doesn't know the remote control... ok, I think you understand it :) . So if no USB connection is available, the device has a third input to start learning. As the learning function is not offen used, I took it to one of the pins, which is one on the ISP header (PINB4) anyway. When it learns the buttons, the actual output is switched on while it can recieve enough sample to store (you can define it in the code). The AVR stores the learned buttons (8 for the 8 outputs, and one for the sleep function) in it's internal EEPROM. When you press the sleep button, it waits for an other button, then it turns on that output for ~30 min, than off (you can trigger a sleep for every output in minutes step from computer). You can set some value before you compile the program, for example the amount of the same samples which the device waits while it is learning.
 
 You can compile it with and without any USART communication, and in debug mode to dump out every recieved IR data on usart.
 
@@ -108,7 +108,7 @@ The TSOP and the feedback LED are connected via an s-video plug:
 
 [![]({{ site.baseurl }}/assets/images/2010/03/4417226179_f324d3a826_o.jpg "tsop31233 and the feedback led")]({{ site.baseurl }}/assets/images/2010/03/4417226179_f324d3a826_o.jpg)
 
-The rest of the details is written in the code, download it here (with the eagle files): [link](https://libesz.digitaltrip.hu/downloads/ir_remote_switch.zip).
+The rest of the details is written in the code, download it here (with the eagle files): [link]({{ site.baseurl }}/assets/downloads/ir_remote_switch.zip).
 
 If you have any question, or just you like this project or built it, as usual, send a comment please!
 

@@ -61,7 +61,7 @@ The essence of the solution is obviously the trigger which comes from the alarm 
 
 [![]({{ site.baseurl }}/assets/images/2017/05/hwc.png)]({{ site.baseurl }}/assets/images/2017/05/hwc.png)The schematic is crazy simple: 12V-5V conversion, input receiver part, output part.
 
-The code is also very simple as you might think. It has to only maintain two time intervals, which are connected. The fancy part is that I used my AVR C++ library, presented in the [last post](https://libesz.digitaltrip.hu/cpp-on-avr/). There I already created the low-level parts for this application in the base library:
+The code is also very simple as you might think. It has to only maintain two time intervals, which are connected. The fancy part is that I used my AVR C++ library, presented in the [last post]({{ site.baseurl }}/cpp-on-avr/). There I already created the low-level parts for this application in the base library:
 
 - _Soft timer set_: controls arbitrary counters, controlled by one real timer
 - _Timed output_: timer handler implementation to set a GPIO to 1 until a predefined time
@@ -132,5 +132,5 @@ Some visualization of the end result:
 
 Resources are available in the following repo on [github](https://github.com/libesz/hwc).
 
-You can directly download the hex file from [here](https://libesz.digitaltrip.hu/wp-content/uploads/hwc.zip).
+You can directly download the hex file from [here]({{ site.baseurl }}/assets/downloads/hwc.zip).
 

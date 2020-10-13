@@ -35,12 +35,12 @@ So the schematic is is:
 
 A few months ago I assembled one to my colleague as a present:
 
-[![]({{ site.baseurl }}/assets/images/2010/01/board-300x207.jpg "board")]({{ site.baseurl }}/assets/images/2010/01/board.jpg)This board contained a MAX232 and a DB9 connector as well, to write custom programs on it, or just debugging, etc. So the hardware was already done and I had working code on it, but it was difficult to "draw" the frames by counting the bits in an integer array like this: {0x550,0x7ffd,0xfebf,0xfaaf,0xeaab,0xfaaf,0xfebf,0x7ffd} . I know this is not the best solution, I'm not so proud of it and anyway it is has dirty code, but I made a PHP script to, let's say design :) frames in browser. [Here](https://libesz.digitaltrip.hu/wp-content/uploads/ledmatrix.php) it is. It has several buttons, by pressing a button, it generates a C array definition, what you can insert to the code (this is also attached to the project). You have to attach these generated lines, attaching them with a comma to keep C syntax.
+[![]({{ site.baseurl }}/assets/images/2010/01/board-300x207.jpg "board")]({{ site.baseurl }}/assets/images/2010/01/board.jpg)This board contained a MAX232 and a DB9 connector as well, to write custom programs on it, or just debugging, etc. So the hardware was already done and I had working code on it, but it was difficult to "draw" the frames by counting the bits in an integer array like this: {0x550,0x7ffd,0xfebf,0xfaaf,0xeaab,0xfaaf,0xfebf,0x7ffd} . I know this is not the best solution, I'm not so proud of it and anyway it is has dirty code, but I made a PHP script to, let's say design :) frames in browser. [Here]({{ site.baseurl }}/assets/downloads/ledmatrix.php) it is. It has several buttons, by pressing a button, it generates a C array definition, what you can insert to the code (this is also attached to the project). You have to attach these generated lines, attaching them with a comma to keep C syntax.
 
 I made a video of the prototype:
 
 <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="425" height="350" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0"><param name="src" value="http://www.youtube.com/v/yOodRXKPx60">
 <embed type="application/x-shockwave-flash" width="425" height="350" src="http://www.youtube.com/v/yOodRXKPx60"></embed></object>So thats all for today, I know it is a very basic implementation. My plan is to write some low level function to manipulate the content of the frame, then it will able to draw custom things what comes at runtime (process some audio input with fft like in Winamp or little 'video games', etc.)
 
-Here is the code: [led\_matrix.zip](https://libesz.digitaltrip.hu/downloads/led_matrix.zip)
+Here is the code: [led\_matrix.zip]({{ site.baseurl }}/assets/downloads/led_matrix.zip)
 

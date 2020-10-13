@@ -142,7 +142,7 @@ Some pictures of the result:
 
 [![]({{ site.baseurl }}/assets/images/2010/01/clock_4-300x147.jpg "clock\_4")]({{ site.baseurl }}/assets/images/2010/01/clock_4.jpg)
 
-[Here are the code and the schematic](https://libesz.digitaltrip.hu/downloads/clock.zip)
+[Here are the code and the schematic]({{ site.baseurl }}/assets/downloads/clock.zip)
 
-Here is the binary [hex](https://libesz.digitaltrip.hu/wp-content/uploads/clock_hex.zip) if you don't want to compile the project. AVR clock speed shall be set to 8MHz.
+Here is the binary [hex]({{ site.baseurl }}/assets/downloads/clock_hex.zip) if you don't want to compile the project. AVR clock speed shall be set to 8MHz.
 

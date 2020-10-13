@@ -32,7 +32,7 @@ Hi again!
 
 Today I'm going to show You an audio selector, which I made for my friend and which has an extra feature: it can be controlled with a regular IR remote controller (which you probably have at home :)).
 
-I could say it is a general remote control reciever library with a demo application: an audio selector :-). I could say this because I completely rewrote my infra red handling code, which I made for my [IR remote switch,](https://libesz.digitaltrip.hu/ir-remote-switch/) on a way that it can be used for any other applications easily. The decoding is the same as before, I have 4 IR remote controls around me, and it works with 3 of them. The biggest improvement is that you don't have to measure the startbit with an other application before you can use one of your controllers, it is automatic now. The code is under 2kBytes, so you can port it even to an ATtiny25 (I used ATmega8, cause (now at Hungary) it is for the same price as an ATtiny or an ATmega48). An other comfort feature is to remember the last selected source in case of the device is switched off.
+I could say it is a general remote control reciever library with a demo application: an audio selector :-). I could say this because I completely rewrote my infra red handling code, which I made for my [IR remote switch,]({{ site.baseurl }}/ir-remote-switch/) on a way that it can be used for any other applications easily. The decoding is the same as before, I have 4 IR remote controls around me, and it works with 3 of them. The biggest improvement is that you don't have to measure the startbit with an other application before you can use one of your controllers, it is automatic now. The code is under 2kBytes, so you can port it even to an ATtiny25 (I used ATmega8, cause (now at Hungary) it is for the same price as an ATtiny or an ATmega48). An other comfort feature is to remember the last selected source in case of the device is switched off.
 
 <!--more-->
 
@@ -83,7 +83,7 @@ And two more for the learning:
 
 ## Download
 
-- [Eagle files](https://libesz.digitaltrip.hu/downloads/audio_switch_eagle_files)
+- [Eagle files]({{ site.baseurl }}/assets/downloads/audio_switch.zip)
 - [Sourcecode](https://github.com/libesz/AVR_IR_audio_selector)(my new practice is to push everything to GitHub :) there you can also download the code, compressed in ZIP)
 
 That's all for today. Suggestions and comments are welcome.

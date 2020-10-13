@@ -36,7 +36,7 @@ permalink: "/3d-snake-ledcube/"
 ---
 Hi!
 
-I've just finished the next application for my [FadeCube](https://libesz.digitaltrip.hu/ledcube/), a 3D snake game! It is a very small pure C application, developed under Linux with CodeBlocks IDE. It uses a multithreaded solution. Actually it is my first try to use POSIX threads.
+I've just finished the next application for my [FadeCube]({{ site.baseurl }}/ledcube/), a 3D snake game! It is a very small pure C application, developed under Linux with CodeBlocks IDE. It uses a multithreaded solution. Actually it is my first try to use POSIX threads.
 
 The first thread is listening for the keyboard. Another one is computing the snake pieces and the food. Tthe third is responsible to render the cube data and sends it to the cube. It's always blocked on a mutex, until the snake thread sends a signal.
 

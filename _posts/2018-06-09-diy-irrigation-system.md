@@ -176,5 +176,5 @@ Also, I might missed important details to document. If anything missing and you 
 
 ### Downloads:
 
-You can download the eagle project with all the properly sized parts inside [here](https://libesz.digitaltrip.hu/wp-content/uploads/irrigation_eagle.zip).
+You can download the eagle project with all the properly sized parts inside [here]({{ site.baseurl }}/assets/downloads/irrigation_eagle.zip).
 

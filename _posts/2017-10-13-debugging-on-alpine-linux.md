@@ -26,7 +26,7 @@ meta:
 author: Gergo Huszty
 permalink: "/debugging-on-alpine-linux/"
 ---
-In one of my previous posts I [explained](https://libesz.digitaltrip.hu/linux-based-router-reloaded/) my renewed router / home server. One task of the box is to serve video/audio content on DLNA. One of the easy selection in this area is minidlna to do the streaming. So I grabbed the first working [minidlna docker container](https://hub.docker.com/r/vimagick/minidlna/), which in practice Alpine Linux based and started to [use](https://github.com/libesz/lhs-ansible/blob/master/roles/minidlna/tasks/main.yml) that.
+In one of my previous posts I [explained]({{ site.baseurl }}/linux-based-router-reloaded/) my renewed router / home server. One task of the box is to serve video/audio content on DLNA. One of the easy selection in this area is minidlna to do the streaming. So I grabbed the first working [minidlna docker container](https://hub.docker.com/r/vimagick/minidlna/), which in practice Alpine Linux based and started to [use](https://github.com/libesz/lhs-ansible/blob/master/roles/minidlna/tasks/main.yml) that.
 
 Our happiness was not instant using the new configuration. Minidlna was never rock-solid, but in this setup it definitely crashed from time to time. As I inspected it crashed every single time when something added to the media library, in practice when the download completed. After checking minidlna issues, I have not found anything useful, so decided to locate the exact problem.
 
