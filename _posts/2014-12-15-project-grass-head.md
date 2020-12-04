@@ -19,9 +19,6 @@ tags:
 meta:
   _edit_last: '1'
   _wpas_done_all: '1'
-  _oembed_c08332ac40e076be73a83a0e6da00d5b: <iframe width="500" height="375" src="https://www.youtube.com/embed/6GFpo6b_j7E?feature=oembed"
-    frameborder="0" allowfullscreen></iframe>
-  _oembed_time_c08332ac40e076be73a83a0e6da00d5b: '1477220086'
 author: Gergo Huszty
 permalink: "/project-grass-head/"
 ---
@@ -115,7 +112,7 @@ int main(void) {
 
 After a week of taking the 340 pictures I rendered out the result with the help of [this article](http://ubuntuforums.org/showthread.php?t=2022316). Check it in 1080p, it is quite cool :-)
 
-http://youtu.be/6GFpo6b\_j7E
+{% include youtube-player.html id="6GFpo6b_j7E" %}
 
 You can build such a setup in an hour.
 

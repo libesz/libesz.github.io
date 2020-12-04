@@ -44,7 +44,7 @@ The snake length is always incremented when it eats :-) . It is controlled by WA
 
 The result:
 
-<iframe width="480" height="360" src="http://www.youtube.com/embed/qmcie9ggPOk" frameborder="0" allowfullscreen></iframe>
+{% include youtube-player.html id="qmcie9ggPOk" %}
 
 It seems much better in live.
 

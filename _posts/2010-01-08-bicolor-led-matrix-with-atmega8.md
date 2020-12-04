@@ -39,8 +39,8 @@ A few months ago I assembled one to my colleague as a present:
 
 I made a video of the prototype:
 
-<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="425" height="350" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0"><param name="src" value="http://www.youtube.com/v/yOodRXKPx60">
-<embed type="application/x-shockwave-flash" width="425" height="350" src="http://www.youtube.com/v/yOodRXKPx60"></embed></object>So thats all for today, I know it is a very basic implementation. My plan is to write some low level function to manipulate the content of the frame, then it will able to draw custom things what comes at runtime (process some audio input with fft like in Winamp or little 'video games', etc.)
+{% include youtube-player.html id="yOodRXKPx60" %}
+So thats all for today, I know it is a very basic implementation. My plan is to write some low level function to manipulate the content of the frame, then it will able to draw custom things what comes at runtime (process some audio input with fft like in Winamp or little 'video games', etc.)
 
 Here is the code: [led\_matrix.zip]({{ site.baseurl }}/assets/downloads/led_matrix.zip)
 
